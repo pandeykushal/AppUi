@@ -56,19 +56,63 @@ class _subLandingState extends State<subLanding> {
                 ),
                 SingleChildScrollView(
                   child: Column(
-                    children: [
-                      Row(
-                        children: [
-                          Icon(Icons.brush),
-                          Text('Logo Design ')
-                        ],
-                        
+                    children: const [
+                   
+                      CudtomListWidget(
+                        icon: Icon(Icons.design_services),
+                        text: Text('Logo Design')
                       ),
-                      CudtomListWidget(),
-                      CudtomListWidget(),
-                      CudtomListWidget(),
-                      CudtomListWidget(),
-                      CudtomListWidget(),
+                      CudtomListWidget(
+                        icon: Icon(Icons.slow_motion_video),
+                        text: Text('Motion Graphics')
+                      ),
+                      CudtomListWidget(
+                        icon: Icon(Icons.auto_graph),
+                        text: Text('3D Animation')
+                      ),
+                      CudtomListWidget(
+                        icon: Icon(Icons.brush),
+                        text: Text('Blender Animation')
+                      ),
+                      CudtomListWidget(
+                        icon: Icon(Icons.photo_size_select_large),
+                        text: Text('Photo Editor')
+                      ),
+                      CudtomListWidget(
+                        icon: Icon(Icons.language),
+                        text: Text('Prototyping')
+                      ),
+                      CudtomListWidget(
+                        icon: Icon(Icons.auto_graph),
+                        text: Text('WireFraming')
+                      ),
+                      CudtomListWidget(
+                        icon: Icon(Icons.design_services),
+                        text: Text('UX/UI')
+                      ),
+                      CudtomListWidget(
+                        icon: Icon(Icons.monochrome_photos),
+                        text: Text('Photoshop')
+                      ),
+                      CudtomListWidget(
+                        icon: Icon(Icons.brush),
+                        text: Text('Brochure Design')
+                      ),
+                      CudtomListWidget(
+                        icon: Icon(Icons.brush),
+                        text: Text('Design')
+                      ),
+                      CudtomListWidget(
+                        icon: Icon(Icons.credit_card),
+                        text: Text('Card Design')
+                      ),
+                      CudtomListWidget(
+                        icon: Icon(Icons.design_services),
+                        text: Text('Banner design')
+                      ),
+                      
+
+                      
                     ],
                   ),
                 )
@@ -83,16 +127,16 @@ class _subLandingState extends State<subLanding> {
 }
 
 class CudtomListWidget extends StatelessWidget {
-  const CudtomListWidget({
-    super.key,
-  });
+  const CudtomListWidget({required this .icon,required this.text});
+  final Text text;
+  final Icon icon;
   
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: Icon(Icons.brush),
-      title: Text('Logo Design'),
+      leading:icon,
+      title:text,
       trailing: Icon(Icons.arrow_forward_ios),
     );
   }
