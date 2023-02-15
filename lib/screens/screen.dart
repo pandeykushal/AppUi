@@ -305,7 +305,7 @@ class _UiScreenState extends State<UiScreen> {
                           width: 200,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(12),
-                           image:DecorationImage(
+                           image:const DecorationImage(
                             fit: BoxFit.cover,
                               image: AssetImage("assets/Images/pp1.png" )),
                               
@@ -318,25 +318,19 @@ class _UiScreenState extends State<UiScreen> {
                           padding: EdgeInsets.all(16.0),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          
-
                           children: [
                           Row(
-                            
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
+                            children: const [
                               Text('Design media ',style: TextStyle(fontSize: 18),),
 
                               Icon(Icons.favorite_border,),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 5,
                           ),
-                          
-                          
-
-                          Text('Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.'),
+                          const Text('Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.'),
 
                         ]),  
                       
@@ -346,7 +340,7 @@ class _UiScreenState extends State<UiScreen> {
         
                       ],),
                     ),
-                    SizedBox(
+                    const SizedBox(
                             height: 10,
                           ),
                        
@@ -402,113 +396,107 @@ class _UiScreenState extends State<UiScreen> {
                       ],),
                     ),
                        
-                       SizedBox(
+                       const SizedBox(
                             height: 10,
                           ),
-                       Container(
-                     
-                     child: Row(children: [
-                      Expanded(
-                        child: Container(
-                          height: 150,
-                          width: 200,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(12),
-                           image:DecorationImage(
-                            fit: BoxFit.cover,
-                              image: AssetImage("assets/Images/pp3.png" )),
-                              
+                       Row(children: [
+                        Expanded(
+                          child: Container(
+                            height: 150,
+                            width: 200,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(12),
+                             image:DecorationImage(
+                              fit: BoxFit.cover,
+                                image: AssetImage("assets/Images/pp3.png" )),
+                                
+                            ),
                           ),
                         ),
-                      ),
-                      Expanded(
-                        child: Container(
-                           color: Colors.white,
-                          padding: EdgeInsets.all(16.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          
-
-                          children: [
-                          Row(
+                        Expanded(
+                          child: Container(
+                             color: Colors.white,
+                            padding: const EdgeInsets.all(16.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
                             children: [
-                              Text('Design media',style: TextStyle(fontSize: 18),),
+                            Row(
+                              
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: const [
+                                Text('Design media',style: TextStyle(fontSize: 18),),
 
-                              Icon(Icons.favorite_border,),
-                            ],
+                                Icon(Icons.favorite_border,),
+                              ],
+                            ),
+                            const SizedBox(
+                              height: 5,
+                            ),
+                            
+                            
+
+                            const Text('Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.'),
+
+                          ]),  
+                        
+                            
                           ),
-                          SizedBox(
-                            height: 5,
-                          ),
-                          
-                          
-
-                          Text('Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.'),
-
-                        ]),  
-                      
-                          
                         ),
-                      ),
         
-                      ],),
-                    ),
-                       SizedBox(
+                        ],),
+                       const SizedBox(
                             height: 10,
                           ),
                       
-                      Container(
-                     
-                     child: Row(children: [
-                      Expanded(
-                        child: Container(
-                          height: 150,
-                          width: 200,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(12),
-                           image:DecorationImage(
-                            fit: BoxFit.cover,
-                              image: AssetImage("assets/Images/pp4.png" )),
-                              
-                          ),
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                           color: Colors.white,
-                          padding: EdgeInsets.all(16.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          
+                      Row(children: [
+                       Expanded(
+                         child: Container(
+                           height: 150,
+                           width: 200,
+                           decoration: BoxDecoration(
+                             borderRadius: BorderRadius.circular(12),
+                            image:const DecorationImage(
+                             fit: BoxFit.cover,
+                               image: AssetImage("assets/Images/pp4.png" )),
+                               
+                           ),
+                         ),
+                       ),
+                       Expanded(
+                         child: Container(
+                            color: Colors.white,
+                           padding: EdgeInsets.all(16.0),
+                         child: Column(
+                           crossAxisAlignment: CrossAxisAlignment.start,
+                           
 
-                          children: [
-                          Row(
-                            
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text('Design media',style: TextStyle(fontSize: 18),),
+                           children: [
+                           Row(
+                             
+                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                             children: const [
+                               Text('Design media',style: TextStyle(fontSize: 18),),
 
-                              Icon(Icons.favorite_border,),
-                            ],
-                          ),
-                          SizedBox(
-                            height: 5,
-                          ),
-                          
-                          
+                               Icon(Icons.favorite_border,),
+                             ],
+                           ),
+                           const SizedBox(
+                             height: 5,
+                           ),
+                           
+                           
 
-                          Text('Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.'),
+                           const Text('Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.'),
 
-                        ]),  
-                      
-                          
-                        ),
-                      ),
+                         ]),  
+                       
+                           
+                         ),
+                       ),
         
-                      ],),
-                    ),
+                       ],),
                        
                   
                   
