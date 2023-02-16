@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:swadhinui/screens/widgit/topbar.dart';
 
 class subLanding extends StatefulWidget {
   const subLanding({super.key});
@@ -29,14 +30,7 @@ class _subLandingState extends State<subLanding> {
                 const SizedBox(
                   height: 50,
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
-                     Icon(Icons.arrow_back_ios_new),
-                     Icon(Icons.search),
-                      
-                  ],
-                ),
+                topbar(),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -51,6 +45,7 @@ class _subLandingState extends State<subLanding> {
                         )  
                     ),
                     ),
+                   
                     Text('Graphics Design ')
                   ],
                 ),
@@ -125,6 +120,8 @@ class _subLandingState extends State<subLanding> {
     );
   }
 }
+
+
 
 class CudtomListWidget extends StatelessWidget {
   const CudtomListWidget({required this .icon,required this.text});

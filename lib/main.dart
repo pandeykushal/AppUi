@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:swadhinui/screens/profiles.dart';
 import 'package:swadhinui/screens/screen.dart';
 import 'package:swadhinui/screens/sublanding.dart';
 
@@ -19,7 +20,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
        debugShowCheckedModeBanner: false,
-      home:  const subLanding(),
+      // home:  const subLanding(),
+      home:  const Profile(),
+
     );
   }
 }

@@ -327,6 +327,7 @@ class _UiScreenState extends State<UiScreen> {
                               Icon(Icons.favorite_border,),
                             ],
                           ),
+                          
                           const SizedBox(
                             height: 5,
                           ),
