@@ -226,10 +226,92 @@ class Profile extends StatelessWidget {
                                 ),
                           ],
                         ),
+                       
                         SizedBox( height: 20,),
                         Text('Skill',style: TextStyle(fontSize: 20),),
                         SizedBox(
                           height: 20,),
+                           Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey[200], 
+                                    borderRadius: BorderRadius.circular(10), 
+                                  ),
+                                  child: const Padding(
+                                    padding: EdgeInsets.all(5.0),
+                                    child: Text('Logo Design',
+                                      style: TextStyle(fontSize: 18),),
+                                      
+                                      
+                                  ),
+                                ),
+                                Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey[200], 
+                                    borderRadius: BorderRadius.circular(10), 
+                                  ),
+                                  child: const Padding(
+                                    padding: EdgeInsets.all(5.0),
+                                    child: Text('Web Design',
+                                      style: TextStyle(fontSize: 18),),
+                                      
+                                      
+                                  ),
+                                ),
+                                Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey[200], 
+                                    borderRadius: BorderRadius.circular(10), 
+                                  ),
+                                  child: const Padding(
+                                    padding: EdgeInsets.all(5.0),
+                                    child: Text('Banner Design ',
+                                      style: TextStyle(fontSize: 18),),
+                                      
+                                      
+                                  ),
+                                ),
+                                
+                          ],
+                        ),
+                        SizedBox(height: 20,),
+                         Row(
+                         
+                          children: [
+                            Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey[200], 
+                                    borderRadius: BorderRadius.circular(10), 
+                                  ),
+                                  child: const Padding(
+                                    padding: EdgeInsets.all(5.0),
+                                    child: Text('Adobe illustrator',
+                                      style: TextStyle(fontSize: 18),),
+                                      
+                                      
+                                  ),
+                                ),
+                                SizedBox(width: 50,),
+                                Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey[200], 
+                                    borderRadius: BorderRadius.circular(10), 
+                                  ),
+                                  child: const Padding(
+                                    padding: EdgeInsets.all(5.0),
+                                    child: Text('Adobe Photoshop',
+                                      style: TextStyle(fontSize: 18),),
+                                      
+                                      
+                                  ),
+                                ),
+                               
+                          ],
+                        ),
+                       
+                       
 
 
                           
