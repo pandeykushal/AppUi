@@ -226,6 +226,10 @@ class Profile extends StatelessWidget {
                                 ),
                           ],
                         ),
+                        SizedBox( height: 20,),
+                        Text('Skill',style: TextStyle(fontSize: 20),),
+                        SizedBox(
+                          height: 20,),
 
 
                           
