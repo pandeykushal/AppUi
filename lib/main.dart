@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       ),
        debugShowCheckedModeBanner: false,
       // home:  const subLanding(),
-      home:  const Profile(),
+      home:   ProfileScreen(),
 
     );
   }

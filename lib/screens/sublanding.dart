@@ -4,10 +4,12 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:swadhinui/screens/widgit/topbar.dart';
 
 class subLanding extends StatefulWidget {
+  
   const subLanding({super.key});
 
   @override
   State<subLanding> createState() => _subLandingState();
+  
 }
 
 class _subLandingState extends State<subLanding> {

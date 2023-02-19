@@ -1,18 +1,29 @@
+
+
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:swadhinui/screens/constannts/constannts.dart';
-import 'package:swadhinui/screens/widgit/topbar.dart';
 
-class Profile extends StatelessWidget {
-  
-  const Profile({super.key});
+import 'constannts/constannts.dart';
+import 'widgit/topbar.dart';
+
+class profile extends StatefulWidget {
+   profile({super.key});
+
+  @override
+  State<profile> createState() => _profileState();
+ 
+}
+
+
+class _profileState extends State<profile> {
+
   
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return  MaterialApp(
+        home: Scaffold(
         body: Container(
           decoration: const BoxDecoration(
         color: Color.fromARGB(80, 243, 241, 241)
@@ -86,38 +97,54 @@ class Profile extends StatelessWidget {
             decoration: BoxDecoration(color: Colors.white ),
             child: Padding(
               padding: const EdgeInsets.all(20.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                   GestureDetector(
-                    onTap: (){
-                    },
-                    child: Text('About'),
-                  ),
-                    GestureDetector(
-                    onTap: (){
-                    },
-                    child: Text('Reviews'),
-                  ),
-                   GestureDetector(
-                    onTap: (){
-                    },
-                    child: Text('Portfolio'),
-                  ), GestureDetector(
-                    onTap: (){
-                    },
-                    child: Text('Gig'),
-                  ),
-                   GestureDetector(
-                    onTap: (){
-                    },
-                    child: Text('Portfolio'),
-                  ),
+              child: TabBar(tabs: 
+                [
+                  Tab(icon:Icon(Icons.directions_bike)),
+                  Tab(icon:Icon(Icons.home)),
+                  Tab(icon:Icon(Icons.diamond)),
+                ]
+                ),
+              // TabBarView(children: [
+              //   Icon(Icons.access_alarm),
+              //   Tab(icon:Icon(Icons.home)),
+              //     Tab(icon:Icon(Icons.diamond)),
+
+              // ])
+            
+                  
+                  
+                  
+
+
+
+                  //  GestureDetector(
+                  //   onTap: (){
+                  //   },
+                  //   child: Text('About'),
+                  // ),
+                  //   GestureDetector(
+                  //   onTap: (){
+                  //   },
+                  //   child: Text('Reviews'),
+                  // ),
+                  //  GestureDetector(
+                  //   onTap: (){
+                  //   },
+                  //   child: Text('Portfolio'),
+                  // ), GestureDetector(
+                  //   onTap: (){
+                  //   },
+                  //   child: Text('Gig'),
+                  // ),
+                  //  GestureDetector(
+                  //   onTap: (){
+                  //   },
+                  //   child: Text('Portfolio'),
+                  // ),
                   
 
                   
-                ],
-              ),
+               
             ),
           ),
           GestureDetector(
