@@ -7,16 +7,16 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'constannts/constannts.dart';
 import 'widgit/topbar.dart';
 
-class profile extends StatefulWidget {
-   profile({super.key});
+class ProfileScreen extends StatefulWidget {
+   ProfileScreen({super.key});
 
   @override
-  State<profile> createState() => _profileState();
+  State<ProfileScreen> createState() => _ProfileScreenState();
  
 }
 
 
-class _profileState extends State<profile> {
+class _ProfileScreenState extends State<ProfileScreen> {
 
   
 
